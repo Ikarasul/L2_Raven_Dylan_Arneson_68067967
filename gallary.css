@@ -23,9 +23,10 @@ p {
     margin-bottom: 40px;
 }
 
-img {
+.img-fluid {
     width: 100%;
-    height: 350px;
+    height: 350px !important;
+    /* Force height to override any specific attributes */
     object-fit: cover;
     border-radius: 12px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
@@ -36,7 +37,7 @@ img {
     filter: brightness(0.95);
 }
 
-img:hover {
+.img-fluid:hover {
     transform: scale(1.03) translateY(-5px);
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
     filter: brightness(1.05);
